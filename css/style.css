@@ -1,0 +1,252 @@
+/* колір основного тексту #212121 */
+
+/* вторинний колір тексту #757575 */
+
+/* білий колір #FFFFFF */
+
+/* акцент #2196F3 */
+
+/* основний колір фона #2F303A */
+
+/* вторинний колір фона #F5F4FA */
+
+/* колір блоку герой #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --team-color: #f5f4fa;
+  --secondary-background-color: #2f303a;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Heder */
+
+.heder {
+}
+
+/* Logo */
+
+.heder-logo-web {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.9;
+}
+
+.heder-logo-studio {
+  color: var(--primary-text-color);
+}
+
+/* Site nav */
+
+.heder-list .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.heder-list .link:hover,
+.heder-list .link:focus {
+  color: var(--accent-color);
+}
+
+.heder-list .link.current {
+  color: var(--accent-color);
+}
+
+.heder-list .link.current {
+  color: var(--accent-color);
+}
+
+/* Site contacts */
+
+.heder-contacts .heder-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.heder-contacts .heder-link:hover,
+.heder-contacts .heder-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background: var(--secondary-background-color);
+}
+
+.hero-list {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.button-text {
+  color: var(--white-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Advantage */
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.advantage-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-text {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Work */
+
+.title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-img {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1058px;
+}
+
+/* Team */
+
+.team-section {
+  background-color: var(--team-color);
+}
+
+.team-hero {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list-hero {
+  background-color: var(--white-color);
+}
+
+.team-text {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--secondary-background-color);
+}
+/* .heder-logo-web {
+   color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+   font-size: 26px;
+  line-height: 1.9;  
+}
+
+.heder-logo-studio {
+  color: var(--primary-text-color);
+} */
+
+.footer-logo-web {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.9;
+}
+
+.footer-logo-studio {
+  color: var(--white-color);
+}
+
+.footer-address {
+  color: var(--white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-link {
+  color: var(--footer-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Studio */
+
+.studio:hover .studio:focus {
+  color: var(--accent-color);
+}
