@@ -20,6 +20,8 @@
   --team-color: #f5f4fa;
   --secondary-background-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+  --button-color: #188CE8;
+  --portfolio-bgr-color:  #F5F5F5;
 }
 
 body {
@@ -54,34 +56,35 @@ body {
 
 .heder-logo-studio {
   color: var(--primary-text-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.9;
 }
 
 /* Site nav */
 
-.heder-list .link {
-  color: var(--primary-text-color);
+.site-nav .link  {
+   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.heder-list .link:hover,
-.heder-list .link:focus {
-  color: var(--accent-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+   color: var(--accent-color);
+   
 }
 
-.heder-list .link.current {
-  color: var(--accent-color);
-}
-
-.heder-list .link.current {
-  color: var(--accent-color);
+.site-nav .link.current {
+   color: var(--accent-color);
+   
 }
 
 /* Site contacts */
 
-.heder-contacts .heder-link {
+.site-contacts .contacts-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -89,8 +92,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.heder-contacts .heder-link:hover,
-.heder-contacts .heder-link:focus {
+.site-contacts .contacts-link:hover,
+.site-contacts .contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -110,23 +113,15 @@ body {
   text-transform: uppercase;
 }
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+.hero-button {
+   background-color: var(--accent-color);
+   color: var(--white-color);
 }
 
-.button-text {
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-color);
   color: var(--white-color);
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 
 /* Advantage */
@@ -247,6 +242,43 @@ body {
 
 /* Studio */
 
-.studio:hover .studio:focus {
+.studio:hover, 
+.studio:focus {
   color: var(--accent-color);
+}
+
+/* Сторінка Портфоліо */
+
+/* Main */
+
+.visually-hidden {
+   position: fixed;
+  transform: scale(0);
+}
+
+.portfolio-button {
+   background-color: var(--team-color);
+   color: var(--primary-text-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+   background-color: var(--accent-color);
+   color: var(--white-color);
+}
+
+
+.work-gallery-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2.00;
+   letter-spacing: 0.06em;
+   color: var(--primary-text-color);
+}
+
+.work-gallery-text {
+   font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
 }
