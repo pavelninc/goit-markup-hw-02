@@ -195,16 +195,6 @@ body {
 .footer {
   background-color: var(--secondary-background-color);
 }
-/* .heder-logo-web {
-   color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-   font-size: 26px;
-  line-height: 1.9;  
-}
-
-.heder-logo-studio {
-  color: var(--primary-text-color);
-} */
 
 .footer-logo-web {
   color: var(--accent-color);
