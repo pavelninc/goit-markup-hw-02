@@ -42,23 +42,16 @@ body {
 
 /* Heder */
 
-.heder {
-}
-
 /* Logo */
-
-.heder-logo-web {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.9;
-}
-
-.heder-logo-studio {
+.heder-logo {
   color: var(--primary-text-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
+}
+
+.heder-logo-web {
+  color: var(--accent-color);
 }
 
 /* Site nav */
@@ -115,14 +108,13 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -132,8 +124,16 @@ border-radius: 4px;
 
 /* Advantage */
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .advantage-title {
@@ -180,7 +180,7 @@ border-radius: 4px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -191,9 +191,8 @@ border-radius: 4px;
 
 .team-text {
   color: var(--title-text-color);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
 }
 
 /* Footer */
@@ -201,16 +200,18 @@ border-radius: 4px;
 .footer {
   background-color: var(--secondary-background-color);
 }
+.footer-logo {
+  color: var(--white-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
 
 .footer-logo-web {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.9;
-}
-
-.footer-logo-studio {
-  color: var(--white-color);
+  line-height: 1.19;
 }
 
 .footer-address {
@@ -221,6 +222,14 @@ border-radius: 4px;
   letter-spacing: 0.03em;
 }
 
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-text {
+}
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
@@ -228,9 +237,7 @@ border-radius: 4px;
 
 .footer-link {
   color: var(--footer-text-color);
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -248,9 +255,18 @@ border-radius: 4px;
 /* Main */
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+/* Button */
 
 .portfolio-button {
   background-color: var(--team-color);
@@ -261,6 +277,7 @@ border-radius: 4px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .portfolio-button:hover,
@@ -268,6 +285,8 @@ border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+
+/* Work Gallery */
 
 .work-gallery-title {
   font-weight: 700;
