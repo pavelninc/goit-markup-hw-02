@@ -41,7 +41,6 @@ body {
 }
 
 /* Heder */
-
 /* Logo */
 .heder-logo {
   color: var(--primary-text-color);
@@ -115,6 +114,7 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: initial;
 }
 
 .hero-button:hover,
@@ -276,8 +276,8 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   cursor: pointer;
+  text-transform: initial;
 }
 
 .portfolio-button:hover,
