@@ -33,6 +33,15 @@
  }
  img {
    max-width: 100%;
+   display: block;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+   margin: 0;
  }
 
  .list {
@@ -49,7 +58,9 @@
  
  /* Heder */
 
-
+.heder {
+   border-bottom: 1px solid #ECECEC;
+}
 
  .main-nav {
    display: flex;
@@ -70,7 +81,6 @@
    padding-top: 24px;
    padding-bottom: 25px;
    margin-right: 92px;
-   
 
    color: var(--primary-text-color);
    font-family: "Raleway", sans-serif;
@@ -87,6 +97,7 @@
  .site-nav {
    display: flex;
  }
+
  .site-nav .item + .item {
    margin-left: 50px;
    display: block;
@@ -100,15 +111,11 @@
    
  .site-nav .link {
    display: block;
-
    color: var(--primary-text-color);
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   
-
-   
  }
  
  .site-nav .link:hover,
@@ -204,7 +211,7 @@
  
  /* Advantage */
  
-.section .advantage {
+ .advantage {
    padding-top: 94px;
    padding-bottom: 94px;
 }
@@ -226,11 +233,11 @@
    text-align: left;
  }
 
- .advantage {
+ .advantage-benefits {
    display: flex;
  }
 
- .advantage .advantage-list + .advantage-list {
+ .advantage-benefits  .advantage-list + .advantage-list {
    margin-left: 30px;
  }
  
@@ -257,7 +264,7 @@
  
  /* Work */
  
- .section .work {
+ .section-work {
 padding-bottom: 94px;
  }
 
@@ -269,13 +276,14 @@ padding-bottom: 94px;
    text-align: center;
    letter-spacing: 0.03em;
    margin-top: 0;
-   margin-bottom: 0;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
+ 
    
  }
 
  .work {
    margin-top: 0;
+   margin-bottom: 0;
    padding-left: 0;
    display: flex;
    flex-wrap: wrap;
@@ -443,6 +451,11 @@ border-radius: 0px 0px 4px 4px;
  /* ----------------- Сторінка Портфоліо ---------------- */
  
  /* Main */
+
+ .gallery {
+   padding-top: 94px;
+   padding-bottom: 94px;
+ }
  
  .visually-hidden {
    white-space: nowrap;
@@ -459,7 +472,6 @@ border-radius: 0px 0px 4px 4px;
  /* Button */
 
  .filter {
-   padding-top: 94px;
    display: flex;
    justify-content: center;
  }
@@ -471,7 +483,6 @@ border-radius: 0px 0px 4px 4px;
  .portfolio-button {
    background-color: var(--team-color);
    color: var(--primary-text-color);
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    font-family: inherit;
    font-weight: 500;
    font-size: 16px;
@@ -481,46 +492,58 @@ border-radius: 0px 0px 4px 4px;
    text-transform: initial;
    border-radius: 4px;
    border: 1px solid transparent;
-   
+   padding-left: 22px;
+   padding-top: 6px;
+   padding-right: 22px;
+   padding-bottom: 6px;
  }
- .button-everyone {
-   padding: 6px 25px;
-   min-width: 73px;}
-.button-website {
-   padding: 6px 22px;
-   min-width: 125px;
+ .everyone {
+   padding-left: 25px;
+   padding-top: 6px;
+   padding-right: 25px;
+   padding-bottom: 6px;
 }
-.button-applications {
-   padding: 6px 22px;
-   min-width: 112px;
-}
-.button-desing {
-   padding: 6px 22px;
-   min-width: 103px;
-}
-.button-marketing {
-   padding: 6px 22px;
-   min-width: 130px;
-}
- 
+
+
  .portfolio-button:hover,
  .portfolio-button:focus {
    background-color: var(--accent-color);
    color: var(--white-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
  }
  
  /* Work Gallery */
 
  .work-gallery {
    margin-top: 50px;
-   padding-bottom: 94px;
    display: flex;
    flex-wrap: wrap;
+  
+ }
+
+ .galery-list:hover,
+ .galery-list:focus {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+ } 
+
+ .gallery-item {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 24px;
+   padding-right: 24px;
+   border-left: 1px solid #ECECEC;
+   border-right: 1px solid #ECECEC;
+   border-bottom: 1px solid #ECECEC;
+   
+      
  }
 
  .work-gallery-item {
    margin-right: 30px;
    margin-bottom: 30px;
+   text-align: left;
  
  }
 
@@ -539,8 +562,8 @@ border-radius: 0px 0px 4px 4px;
    line-height: 2;
    letter-spacing: 0.06em;
    color: var(--primary-text-color);
-   margin-top: 20px;
    margin-bottom: 4px;
+   
  }
  
  .work-gallery-text {
@@ -548,6 +571,5 @@ border-radius: 0px 0px 4px 4px;
    line-height: 1.88;
    letter-spacing: 0.03em;
    color: var(--title-text-color);
-   margin-top: 0;
-   margin-bottom: 20px;
+   
  }
